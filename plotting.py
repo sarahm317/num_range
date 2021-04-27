@@ -38,6 +38,4 @@ def plotEllipses(els,font=18, graphed = False, xlims = None, ylims=None, filenam
         plt.ylim(ylims[0],ylims[1])
 
     if filename is not None:
-        plt.savefig(filename,dpi=300)
-
-    plt.show()
+        plt.savefig(filename,dpi=300, bbox_inches="tight", pad_inches=0, transparent=True)
